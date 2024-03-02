@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://wwww.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Shiv's Organization | Workspaces</title>
+</head>
+<body>
+    <table>
+        <tr>
+            <th>Workspace Number</th>
+            <th>Workspace Name</th>
+            <th>Bed Info</th>
+        </tr>
+        <tr th:each="workspace:${workspaces}">
+            <td th:text="${workspace.number}">Number</td>
+            <td th:text="${workspace.name}">Name</td>
+            <td th:text="${workspace.info}">Info</td>
+        </tr>
+    </table>
+</body>
+</html>
